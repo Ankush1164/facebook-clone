@@ -50,7 +50,7 @@ function AllPosts() {
             }
 
             <div className=" fle w-full h-10 justify-center items-center">
-                <button className='border-2 border-current px-4'>See More</button>
+                <button className=' px-4 bg-blue-500'>See More <i class="fa-solid fa-angle-down"></i></button>
             </div>
         </div>
     )
