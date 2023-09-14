@@ -1,0 +1,47 @@
+.left_box{
+    height: 100%;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 10px;
+}
+.left_sideItems_link div{
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    gap: 1.5rem;
+    border-radius: 5px;
+}
+.main_page{
+    height: 90vh;
+}
+
+.crousal_box{
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+.crousalimg_box{
+    max-width: 130px;
+    min-width: 130px;
+}
+.activity_controles div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.center_page{
+    width: 54%;
+}
+.user_intrestion span{
+    font-size: 20px;
+    cursor: pointer;
+}
+/* .right_page{
+    height: 90vh;
+} */
