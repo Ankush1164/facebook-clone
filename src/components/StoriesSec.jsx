@@ -1,7 +1,6 @@
 import React from 'react'
 import "./Utility.css"
 import crousalData from "../components/CrousalData"
-
 function StoriesSec() {
     function crousalValues(val) {
         return (
@@ -12,6 +11,7 @@ function StoriesSec() {
     }
     return (
         <>
+
             <div className='w-full h-44 overflow-hidden relative'>
                 <div className='h-full w-full flex justify-between items-center px-2 absolute'>
                     <button><i class="fa-solid fa-circle-chevron-left text-2xl text-white"></i></button>

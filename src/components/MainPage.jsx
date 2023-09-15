@@ -8,7 +8,7 @@ import "../components/Utility.css"
 function MainPage() {
   return (
     <>
-        <div className='w-full bg-slate-200 flex justify-between main_page gap-2 overflow-scroll'>
+        <div className='w-full bg-slate-200 flex justify-between main_page gap-2'>
         <LeftSide/>
         <CenterPage/>
         <RightSide/>

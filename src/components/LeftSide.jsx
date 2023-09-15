@@ -6,7 +6,7 @@ function LeftSide() {
         <>
 
             {/* Main div */}
-            <div className='w-80 left_box overflow-y-scroll scroll-smooth sticky'>
+            <div className='w-80 left_box overflow-y-scroll scroll-smooth '>
 
                 {/* Main div children */}
                 <div className='w-full h-full flex flex-col p-2 gap-1'>
