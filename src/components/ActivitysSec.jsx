@@ -3,7 +3,7 @@ import React from 'react'
 function ActivitysSec() {
   return (
     <>
-      <div className='bg-slate-50 w-full h-44 rounded-md p-2 flex flex-col mb-5'>
+      <div className='bg-gray-100 w-full h-44 rounded-md p-2 flex flex-col mb-5 mt-5 drop-shadow-md'>
 
         {/* profile sec box */}
         <div className='flex items-center pl-5 gap-5 py-2 border-inherit pb-4 border-b-2'>

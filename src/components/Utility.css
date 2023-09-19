@@ -1,47 +1,94 @@
-.left_box{
+.left_box {
     height: 90vh;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 0px;
 }
-::-webkit-scrollbar-thumb{
-    background-color: grey;
+
+::-webkit-scrollbar-thumb {
     border-radius: 10px;
 }
-.left_sideItems_link div{
-    background-color: lightblue;
+
+.left_sideItems_link div {
     display: flex;
     align-items: center;
     padding: 8px;
     gap: 1.5rem;
     border-radius: 5px;
 }
-    .main_page{
-        height: 90vh;
-    }
 
-.crousal_box{
-    overflow-x:hidden;
+.left_sideItems_link div:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.main_page {
+    height: 90vh;
+}
+
+.crousal_box {
+    /* overflow-x: hidden; */
     scroll-behavior: smooth;
 }
-.crousalimg_box{
+
+.crousalimg_box {
     max-width: 130px;
     min-width: 130px;
 }
-.activity_controles div{
+
+.activity_controles div {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
     cursor: pointer;
 }
-.center_page{
-    width: 54%; 
+
+.center_page {
+    width: 50%;
 }
-.user_intrestion span{
+
+.user_intrestion span {
     font-size: 20px;
     cursor: pointer;
 }
-.right_page{
+
+.comment_sec {
+    border-top: 2px solid lightgray;
+}
+
+.comment_sec span {
+    width: 150px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.comment_sec span:hover {
+    background-color: lightgray;
+}
+
+.right_page {
     height: 90vh;
 }
+
+
+
+
+/* let url = `https://api.unsplash.com/search/photos?page=${page}&query=all&client_id=GWBM0Iz1Sm8mf5w6uYK2tuyIa9V2ZWIVnRgiIgyriEI`
+const [data, setData] = useState([]);
+const [page , setPage] = useState(1)
+const fetchInfo = async () => {
+    return await fetch(url)
+        .then((res) => res.json())
+        .then((d) => setData(d.results))
+}
+console.log(data)
+    useEffect(()=>{
+        fetchInfo();
+    },[page])
+
+    function loadData(){
+        page ? (page === 1) : setPage(page+1)
+    } */

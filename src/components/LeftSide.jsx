@@ -6,7 +6,7 @@ function LeftSide() {
         <>
 
             {/* Main div */}
-            <div className='w-80 left_box overflow-y-scroll scroll-smooth '>
+            <div className='w-80 left_box overflow-y-scroll scroll-smooth bg-slate-50'>
 
                 {/* Main div children */}
                 <div className='w-full h-full flex flex-col p-2 gap-1'>
@@ -27,19 +27,19 @@ function LeftSide() {
                         </div>
                         <div>
                             <i class="fa-solid fa-user-group"></i>
-                            <p>Friends</p>
+                            <p>Groups</p>
                         </div>
                         <div>
-                            <i class="fa-solid fa-user-group"></i>
-                            <p>Friends</p>
+                            <i class="fa-regular fa-bookmark"></i>
+                            <p>Saved Items</p>
                         </div>
                         <div>
-                            <i class="fa-solid fa-user-group"></i>
-                            <p>Friends</p>
+                            <i class="fa-solid fa-video"></i>
+                            <p>Videos</p>
                         </div>
                         <div>
-                            <i class="fa-solid fa-user-group"></i>
-                            <p>Friends</p>
+                            <i class="fa-solid fa-store"></i>
+                            <p>Marketplace</p>
                         </div>
                     </div>
                 </div>

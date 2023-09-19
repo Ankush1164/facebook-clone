@@ -5,7 +5,7 @@ import AllPosts from './AllPosts'
 function CenterPage() {
     return (
         <>
-        <div className='center_page bg-slate-200 p-1 overflow-scroll'>
+        <div className='center_page bg-slate-50 p-1 overflow-scroll'>
         <StoriesSec />
         <ActivitysSec/>
         <AllPosts/>
