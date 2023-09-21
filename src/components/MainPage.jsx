@@ -3,6 +3,8 @@ import LeftSide from './LeftSide'
 import CenterPage from './CenterPage'
 import RightSide from './RightSide'
 import "../components/Utility.css"
+import { Outlet } from 'react-router-dom'
+
 
 
 function MainPage() {
@@ -10,7 +12,7 @@ function MainPage() {
     <>
         <div className='w-full bg-slate-50 flex justify-between main_page gap-2'>
         <LeftSide/>
-        <CenterPage/>
+        <Outlet/>
         <RightSide/>
     </div>
     </>

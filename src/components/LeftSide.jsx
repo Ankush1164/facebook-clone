@@ -1,5 +1,6 @@
 import React from 'react'
 import "../components/Utility.css"
+import { Link } from 'react-router-dom'
 
 function LeftSide() {
     return (
@@ -23,11 +24,11 @@ function LeftSide() {
                         {/* all links */}
                         <div>
                             <i class="fa-solid fa-user-group"></i>
-                            <p>Friends</p>
+                            <Link to={'/friends'}><p>Friends</p></Link>
                         </div>
                         <div>
                             <i class="fa-solid fa-user-group"></i>
-                            <p>Groups</p>
+                            <Link to={'/groups'}><p>Groups</p></Link>
                         </div>
                         <div>
                             <i class="fa-regular fa-bookmark"></i>
