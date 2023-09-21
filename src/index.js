@@ -5,11 +5,16 @@ import App from './App';
 import { createBrowserRouter , RouterProvider} from 'react-router-dom';
 import FriendsList from './components/LeftSideLinkComponents/FriendsList';
 import GroupList from './components/LeftSideLinkComponents/GroupList';
+import CenterPage from './components/CenterPage';
 const router = createBrowserRouter([
   {
     path : "/",
     element : <App/>,
     children:[
+      {
+        path:"/",
+        element:<CenterPage />
+        },
       {
         path:"friends",
         element:<FriendsList/>
@@ -17,6 +22,10 @@ const router = createBrowserRouter([
       {
         path : "groups",
         element : <GroupList/>
+      },
+      {
+        path : 'home',
+        element : <App/>
       }
     ]
   }

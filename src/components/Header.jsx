@@ -2,6 +2,7 @@ import React from 'react'
 import sitelogo from "../assets/logo.png"
 import "../components/Header.css"
 import "../components/Utility.css"
+import { Link } from 'react-router-dom'
 
 function Header() {
     return (
@@ -13,7 +14,7 @@ function Header() {
                 </div>
 
                 <div className='w-2/5 flex gap-20 justify-center p-2 items-center social_links'>
-                    <i class="fa-solid fa-house"></i>
+                    <Link to={'/'}><i class="fa-solid fa-house"></i></Link>
                     <i class="fa-solid fa-store"></i>
                     <i class="fa-solid fa-tv"></i>
                 </div>

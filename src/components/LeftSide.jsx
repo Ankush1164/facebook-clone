@@ -22,14 +22,22 @@ function LeftSide() {
                     <div className='full h-full flex flex-col px-3 py-3 gap-5 left_sideItems_link'>
 
                         {/* all links */}
-                        <div>
-                            <i class="fa-solid fa-user-group"></i>
-                            <Link to={'/friends'}><p>Friends</p></Link>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-user-group"></i>
-                            <Link to={'/groups'}><p>Groups</p></Link>
-                        </div>
+                        <Link to={'/friends'}>
+                            <div>
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>Friends</p>
+                            </div>
+                        </Link>
+
+
+                        <Link to={'/groups'}>
+                            <div>
+                                <i class="fa-solid fa-user-group"></i>
+                                <p>Groups</p>
+                            </div>
+                        </Link>
+
+
                         <div>
                             <i class="fa-regular fa-bookmark"></i>
                             <p>Saved Items</p>
