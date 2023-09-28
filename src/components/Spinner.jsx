@@ -3,7 +3,7 @@ import "../components/Spinner.css"
 
 function Spinner() {
   return (
-    <div>
+    <div className='flex justify-center items-center h-screen w-full'>
         <span class="loader"></span>
     </div>
   )

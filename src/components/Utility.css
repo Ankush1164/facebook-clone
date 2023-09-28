@@ -72,23 +72,20 @@
 .right_page {
     height: 90vh;
 }
-
-
-
-
-/* let url = `https://api.unsplash.com/search/photos?page=${page}&query=all&client_id=GWBM0Iz1Sm8mf5w6uYK2tuyIa9V2ZWIVnRgiIgyriEI`
-const [data, setData] = useState([]);
-const [page , setPage] = useState(1)
-const fetchInfo = async () => {
-    return await fetch(url)
-        .then((res) => res.json())
-        .then((d) => setData(d.results))
+.news_likeBox span{
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 3px 50px 3px 50px;
+    border-radius: 10px;
 }
-console.log(data)
-    useEffect(()=>{
-        fetchInfo();
-    },[page])
-
-    function loadData(){
-        page ? (page === 1) : setPage(page+1)
-    } */
+.news_likeBox span:hover{
+    background-color: whitesmoke;
+}
+.profileSec_buttons button{
+    border: 1px solid #000000;
+    padding: 4px 10px 4px 10px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    font-weight: 600;
+}

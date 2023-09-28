@@ -15,7 +15,7 @@ function StoriesSec() {
     // }
     return (
         <>
-            <div className='bg-red-200 w-full h-44 relative overflow-scroll'>
+            <div className='w-full h-44 relative overflow-scroll'>
             <div className='bg-transparent w-full h-full flex items-center justify-between absolute z-10'>
                     <button>Next</button>
                     <button>prev</button>

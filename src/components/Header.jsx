@@ -15,15 +15,16 @@ function Header() {
 
                 <div className='w-2/5 flex gap-20 justify-center p-2 items-center social_links'>
                     <Link to={'/'}><i class="fa-solid fa-house"></i></Link>
-                    <i class="fa-solid fa-store"></i>
-                    <i class="fa-solid fa-tv"></i>
+                    <Link to={'/marketPlace'}><i class="fa-solid fa-store"></i></Link>
+                    <Link to={'/videos'}><i class="fa-solid fa-tv"></i></Link>
+                    <Link to={'/newsShaltter'}><i class="fa-regular fa-newspaper"></i></Link>
                 </div>
 
                 <div className='w-56 mr-4 flex justify-around p-2 items-center social_icons'>
                     <i class="fa-solid fa-list-ul"></i>
                     <i class="fa-brands fa-facebook-messenger"></i>
                     <i class="fa-solid fa-bell"></i>
-                    <i class="fa-solid fa-user"></i>
+                    <Link to={'/UserProfile'}><i class="fa-solid fa-user"></i></Link>
 
                 </div>
 

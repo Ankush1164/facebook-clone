@@ -42,14 +42,20 @@ function LeftSide() {
                             <i class="fa-regular fa-bookmark"></i>
                             <p>Saved Items</p>
                         </div>
-                        <div>
+
+                        
+                        <Link to={'/videos'}>
+                            <div>
                             <i class="fa-solid fa-video"></i>
                             <p>Videos</p>
                         </div>
-                        <div>
+                        </Link>
+
+                        <Link to={"/marketPlace"}><div>
                             <i class="fa-solid fa-store"></i>
                             <p>Marketplace</p>
                         </div>
+                        </Link>
                     </div>
                 </div>
             </div>
