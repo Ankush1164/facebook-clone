@@ -3,11 +3,12 @@ import sitelogo from "../assets/logo.png"
 import "../components/Header.css"
 import "../components/Utility.css"
 import { Link } from 'react-router-dom'
+import "./Utility.css"
 
 function Header() {
     return (
         <div>
-            <header className='bg-zinc-100 w-full flex justify-between'>
+            <header className='bg-blue-100 w-full flex justify-between drop-shadow-md  z-10 header_sec'>
                 <div className='w-fit mx-2 flex items-center justify-center  px-0.5'>
                     <img src={sitelogo} alt="" className='w-14 ' />
                     <input type="search" name="" id="" placeholder='search' className='h-8 w-44 rounded-md pl-2 border-0 outline-none' />

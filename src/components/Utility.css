@@ -19,7 +19,7 @@
 }
 
 .left_sideItems_link div:hover {
-    background-color: lightgray;
+    background-color: lightblue;
     cursor: pointer;
 }
 
@@ -89,3 +89,64 @@
     background-color: whitesmoke;
     font-weight: 600;
 }
+.userSec_buttons{
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    align-items: center;
+}
+.userSec_buttons button{
+    border: 1px solid lightgray;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+
+}
+.allPost button{
+    font-size: 25px;
+    padding: 2px 35px 2px 35px;
+    border-radius: 8px;
+}
+.allPost button:hover{
+    background-color: lightgray;
+}
+
+
+
+@media screen and (max-width: 420px) {
+    .left_box{
+      display: none;
+    }
+    .right_page{
+        display: none;
+    }
+    .header_sec{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .center_page{
+        width: 100%;
+    }
+    .social_links i{
+        font-size: 16px;
+    }
+    .social_links{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
+    }
+    .social_icons{
+        display: none;
+
+    }
+    .news_sec{
+        width: 100%;
+    }
+    .market_Sec{
+        width: 100%;
+    }
+    .marketSec_products{
+        width: 47%;
+    }
+  }

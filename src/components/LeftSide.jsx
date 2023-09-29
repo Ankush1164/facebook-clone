@@ -7,7 +7,7 @@ function LeftSide() {
         <>
 
             {/* Main div */}
-            <div className='w-80 left_box overflow-y-scroll scroll-smooth bg-slate-50'>
+            <div className='w-80 left_box overflow-y-scroll scroll-smooth bg-blue-50'>
 
                 {/* Main div children */}
                 <div className='w-full h-full flex flex-col p-2 gap-1'>
@@ -38,17 +38,20 @@ function LeftSide() {
                         </Link>
 
 
-                        <div>
-                            <i class="fa-regular fa-bookmark"></i>
-                            <p>Saved Items</p>
-                        </div>
+                        <Link to={'/saved'}>
+                            <div>
+                                <i class="fa-regular fa-bookmark"></i>
+                                <p>Saved Items</p>
+                            </div>
 
-                        
+                        </Link>
+
+
                         <Link to={'/videos'}>
                             <div>
-                            <i class="fa-solid fa-video"></i>
-                            <p>Videos</p>
-                        </div>
+                                <i class="fa-solid fa-video"></i>
+                                <p>Videos</p>
+                            </div>
                         </Link>
 
                         <Link to={"/marketPlace"}><div>

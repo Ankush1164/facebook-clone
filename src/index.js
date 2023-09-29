@@ -10,7 +10,9 @@ import MarketItems from './components/MarketItems/MarketItems';
 import VideosItems from './components/VideosItems/VideosItems';
 import NewsShaltter from './components/NewsShaltter/NewsShaltter';
 import UserDetails from './components/UserInfo/UserDetails';
+import SavedItems from './components/SavedItemsSec/SavedItems';
 const router = createBrowserRouter([
+
   {
     path : "/",
     element : <App/>,
@@ -42,6 +44,10 @@ const router = createBrowserRouter([
       {
         path : "newsShaltter",
         element : <NewsShaltter/>
+      },
+      {
+        path: "saved",
+        element : <SavedItems/>
       }
     ]
   },

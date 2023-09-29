@@ -42,9 +42,9 @@ function AllPosts() {
                     data && data.length > 0 && data.map((dataObj) => {
                         return (
     
-                            <div className='w-full h-auto border-slate-500 border-2 mb-5 rounded-md'>
+                            <div className='w-full h-auto bg-white shadow-lg mb-5 rounded-md'>
                                 <div className='flex w-full gap-3 p-2 items-center'>
-                                    <div className='bg-red-200 h-12 w-12 rounded-full'>
+                                    <div className=' h-12 w-12 rounded-full'>
                                         <img src={dataObj.user.profile_image.medium} alt="" srcset="" className='rounded-full' />
                                     </div>
                                     <div className='flex flex-col items-start grow'>

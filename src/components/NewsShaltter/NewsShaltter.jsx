@@ -29,7 +29,7 @@ function NewsShaltter() {
     fetchNewsData();
   }, [])
   return (
-    <div className='bg-gray-100 p-2 w-3/5 h-auto flex justify-center flex-col overflow-scroll scroll-smooth gap-2'>
+    <div className='bg-gray-100 p-2 w-3/5 h-auto flex justify-center flex-col overflow-scroll scroll-smooth gap-2 news_sec'>
       <div className='w-full h-full flex flex-col gap-2'>
       <h2 className='border-b-2 p-2 text-lg font-bold tracking-wide text-blue-700 border-blue-200'>News Highlighted</h2>
         {
