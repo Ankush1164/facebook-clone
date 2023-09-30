@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { createBrowserRouter , RouterProvider} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import FriendsList from './components/LeftSideLinkComponents/FriendsList';
 import GroupList from './components/LeftSideLinkComponents/GroupList';
 import CenterPage from './components/CenterPage';
@@ -11,55 +11,59 @@ import VideosItems from './components/VideosItems/VideosItems';
 import NewsShaltter from './components/NewsShaltter/NewsShaltter';
 import UserDetails from './components/UserInfo/UserDetails';
 import SavedItems from './components/SavedItemsSec/SavedItems';
+import Register from './components/Register';
 const router = createBrowserRouter([
-
   {
-    path : "/",
-    element : <App/>,
-    children:[
+    path: "/",
+    element: <Register />
+  },
+  {
+    path: "App",
+    element: <App />,
+    children: [
       {
-      path:"/",
-        element:<CenterPage />
-        },
-      {
-        path:"friends",
-        element:<FriendsList/>
+        path: "/",
+        element: <CenterPage />
       },
       {
-        path : "groups",
-        element : <GroupList/>
+        path: "friends",
+        element: <FriendsList />
       },
       {
-        path : 'home',
-        element : <App/>
+        path: "groups",
+        element: <GroupList />
       },
       {
-        path : "marketPlace",
-        element : <MarketItems/>
+        path: 'home',
+        element: <App />
       },
       {
-        path : "videos",
-        element : <VideosItems/>
+        path: "marketPlace",
+        element: <MarketItems />
       },
       {
-        path : "newsShaltter",
-        element : <NewsShaltter/>
+        path: "videos",
+        element: <VideosItems />
+      },
+      {
+        path: "newsShaltter",
+        element: <NewsShaltter />
       },
       {
         path: "saved",
-        element : <SavedItems/>
+        element: <SavedItems />
       }
     ]
   },
   {
-    path : "UserProfile",
-    element : <UserDetails/>
+    path: "UserProfile",
+    element: <UserDetails />
   },
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
