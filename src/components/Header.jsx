@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import sitelogo from "../assets/logo.png"
 import "../components/Header.css"
 import "../components/Utility.css"
 import { Link } from 'react-router-dom'
 import "./Utility.css"
+import MenuBar from './HeaderMenuLinks/MenuBar'
 
 function Header() {
+    const [menuBox , setMenuBox] = useState(false)
+    const ShowMenu = ()=>{
+        setMenuBox((prevMenuBox) => !prevMenuBox);
+    }
+
     return (
         <div>
-            <header className='bg-blue-100 w-full flex justify-between drop-shadow-md  z-10 header_sec'>
+            <header className='bg-blue-100 w-full flex justify-between drop-shadow-md  header_sec'>
                 <div className='w-fit mx-2 flex items-center justify-center  px-0.5'>
                     <img src={sitelogo} alt="" className='w-14 ' />
                     <input type="search" name="" id="" placeholder='search' className='h-8 w-44 rounded-md pl-2 border-0 outline-none' />
@@ -22,7 +28,7 @@ function Header() {
                 </div>
 
                 <div className='w-56 mr-4 flex justify-around p-2 items-center social_icons'>
-                    <i class="fa-solid fa-list-ul"></i>
+                    <button onClick={ShowMenu}><i class="fa-solid fa-list-ul"></i></button>
                     <i class="fa-brands fa-facebook-messenger"></i>
                     <i class="fa-solid fa-bell"></i>
                     <Link to={'/UserProfile'}><i class="fa-solid fa-user"></i></Link>
@@ -30,6 +36,14 @@ function Header() {
                 </div>
 
             </header>
+            {
+                menuBox && (
+                    <div className='bg-blue-50 h-5/6  w-80 absolute right-2 z-10 transition-all 0.3s'>
+                    <MenuBar/>
+                </div>
+                )
+            }
+
         </div>
     )
 }

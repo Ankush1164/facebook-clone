@@ -110,16 +110,15 @@
 .allPost button:hover{
     background-color: lightgray;
 }
+.form_boxes div{
+    background-color: yellow;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-.card-registration .select-input.form-control[readonly]:not([disabled]) {
-    font-size: 1rem;
-    line-height: 2.15;
-    padding-left: .75em;
-    padding-right: .75em;
-    }
-    .card-registration .select-arrow {
-    top: 13px;
-    }
 
 @media screen and (max-width: 420px) {
     .left_box{

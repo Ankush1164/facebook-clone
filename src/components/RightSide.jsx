@@ -42,9 +42,9 @@ function RightSide() {
     };
     return (
         <>
-            <div className='bg-blue-50 w-80 right_page sticky flex flex-col justify-center items-center'>
+            <div className='bg-blue-50 w-80 right_page flex flex-col justify-center items-center'>
                 <div className='px-5 flex w-full'>
-                <p className='font-semibold '>Sponsered</p>
+                <p className='font-semibold'>Sponsered</p>
                 </div>
                 
                 {/* Sponsered Items box */}

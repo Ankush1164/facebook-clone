@@ -51,7 +51,7 @@ function SavedItems() {
         <div className='w-7/12 bg-blue-100 h-full p-1 overflow-y-scroll'>
             <ToastContainer/>
             <div className='w-full  h-auto flex flex-col gap-2'>
-                {itemData && itemData.length === 0 ? (<div><h1>This section is empty</h1></div>) : (
+                {itemData && itemData.length === 0 ? (<div className='flex flex-col gap-4 w-full h-screen justify-center items-center'><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYtWETgihNWshkyH3e6FYh_ENVcewrTV0VqA&usqp=CAU" alt="image h ek" className='rounded-lg'/><p className='text-lg font-semibold'>Tune kuch save nhi kiya abhi tk</p></div>) : (
                     itemData.map((val) => {
                         return (
                             <div className='w-full h-44 bg-gray-100 flex items-start justify-between rounded-md shadow-md' key={val.id}>

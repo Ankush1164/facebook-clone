@@ -13,12 +13,9 @@ import UserDetails from './components/UserInfo/UserDetails';
 import SavedItems from './components/SavedItemsSec/SavedItems';
 import Register from './components/Register';
 const router = createBrowserRouter([
+
   {
     path: "/",
-    element: <Register />
-  },
-  {
-    path: "App",
     element: <App />,
     children: [
       {
@@ -59,6 +56,10 @@ const router = createBrowserRouter([
     path: "UserProfile",
     element: <UserDetails />
   },
+  {
+    path :"register",
+    element : <Register/>
+  }
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
